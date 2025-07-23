@@ -4,5 +4,6 @@
 def suma(a, b):
     return a + b
 
-resultado = suma(2,5)
-print(resultado)
+if __name__ == "__main__":
+    resultado_suma = suma(2,3)
+    print(f"Resultado de la suma: {resultado_suma}")
