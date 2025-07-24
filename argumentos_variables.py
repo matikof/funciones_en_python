@@ -2,8 +2,10 @@ print("*** Argumentos Variables en Java ***")
 #Definimos una función la cual va a pedir argumentos posicionales
 #Pero también va a tener la posibilidad de ingresar argumentos
 #variables
-def superheroe_superpoder(superheroe, nombre, *args):
-    print(f"SuperHeroe: {superheroe} -> Nombre Real: {nombre} -> {args}")
+def superheroe_superpoder(superheroe, nombre, *poderes):
+    print(f"SuperHeroe: {superheroe} -> Nombre Real: {nombre} -> Poderes: {poderes}")
+    for poder in poderes:
+        print(f"Poder -{poder}")
 
 superheroe_superpoder("SpiderMan", "Peter Parker", "Instinto Aracnido", "Telaraña")
 
