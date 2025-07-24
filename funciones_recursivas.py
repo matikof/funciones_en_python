@@ -20,3 +20,16 @@ def funcion_recursiva_dos(num):
         #o sea la salida va a ser 1-2-3-4-5
 
 funcion_recursiva_dos(5)
+
+
+#funcion de factorial
+def funcion_factorial(num):
+    if num == 0 or num == 1:
+        return 1
+    else:
+        factorial_parcial = num * funcion_factorial(num -1)
+        print(factorial_parcial)
+        return factorial_parcial
+
+factorial = funcion_factorial(5)
+print(factorial)
